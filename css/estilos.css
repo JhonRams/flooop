@@ -1,0 +1,269 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28/06/2020, 02:41:05 PM
+    Author     : JR
+*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: calibri light;
+    color: #3c3b4a;
+}
+#productos,#servicios,#cta,#blog-card,#nosotros,#servicio,#mensaje,#contacto,.formulariocompras{
+    width: 100%;
+    float: left;
+}
+.producto{
+    width: 25%;
+    height: 19em;
+    float: left;
+    position: relative; 
+    padding: 1%;
+}
+.contenido{
+    position: relative;
+    height: 100%;
+    box-shadow: 0px 4px 15px 0px rgba(191, 195, 198, 0.29);
+    overflow: hidden;
+
+    padding:1%;
+    text-align: center
+}
+.producto img{
+    max-width: 100%;
+    max-height: 10em;
+}
+.imagen{
+    text-align: center;
+}
+.info{
+    padding-top: 10em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.info:hover{
+}
+.nombre{
+    padding:0.5em;
+    text-align: center;
+    font-size: 1.5em;
+    color: #27827c;
+    height: 2em;
+    overflow: hidden;
+}
+.precio{
+    font-size: 1.2em;
+    text-decoration: line-through;
+    color: #6b7a84;
+}
+.oferta{
+    font-size: 1.8em;
+    color: #cc762f;
+    text-align: center;
+}
+.oferta button{
+    background: none;
+    color: #2e744e;
+    border: none;
+}
+.oferta img{
+    max-width: 100%;
+    max-height: 10em;
+    
+}
+.compra{
+    color: #e41760 !important;
+    border-radius: 2em;
+}
+.compra b{
+    font-size:1.5em ;
+    color: #e41760;
+}
+.compra:active,compra:visited{
+    color: red;
+}
+
+.oferta h6{
+    text-decoration: line-through;
+}
+.oferta h4{
+    color: #fdae64;
+}
+.oferta .nombre{
+    height: 2em;
+    overflow: hidden;
+}
+.oferta .descripcion{
+    height: 4em;
+    overflow: hidden;
+}
+.marca{
+    padding:0.5em;
+    font-size: 1.5em;
+}
+.boton-ver,.boton-comprar,.boton-cancelar{
+    cursor: pointer;
+    font-size: 1.5em;
+    padding: 0.3em;
+    color: white;
+    border: none;
+    width: 4em;
+    position: absolute;
+    border-radius: 2px;
+    bottom: 1%;
+    right: 1%;
+}
+.boton-comprar,.boton-cancelar{
+    position: static;
+    margin: 0.5em;
+}
+.detalle-compra{
+    text-align: center;
+    font-size: 2em !important;
+    color: #e41760 !important;
+}
+.boton-comprar{
+    width: 8em;
+    padding: 0.5em;
+    background: #e41760;
+}
+.fcompra{
+    display: inline;
+}
+.boton-cancelar{
+   width: 8em;
+   background: #cdd4d9;
+    padding: 0.5em;
+    color: #3c3b4a; 
+}
+.boton-ver:hover{
+    box-shadow: 0 0 3px 1px #072f4c;
+}
+
+.detalle{
+    font-size: 1.2em;
+    text-align: left;
+}
+.cantidad input{
+    font-size: 1.5em;
+    width: 3em;
+}
+.disponible{
+    font-size: 1.5em;
+    color: #27827c;
+}
+.ver{
+    position: fixed;
+    background:white;
+    padding: 2%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    z-index: 1031;
+}
+.ver .imagen{
+    width: 50%;
+    float: left;
+}
+.ver img{
+    max-height: 100%;
+}
+.ver .info{
+    width: 50%;
+    float: left;
+    position: relative;
+    padding:2%;
+}
+.ver .boton-ver{
+    display: none;
+}
+.ver .nombre{
+    height: auto;
+}
+.mensaje{
+    height: 6em;
+    width: 100%;
+    border-radius: 1em;
+    margin-bottom: 2em;
+    border: 2px solid #ccc;
+}
+
+.redes a{
+    font-size: 2em;
+    margin-right:1em;
+    
+}
+.redes a i{
+    color:#e7b286 !important;
+}
+
+#login{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1032;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#login form{
+    width: 12em;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+#login input{
+    width: 100%;
+    height: 2em;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+#login button{
+    margin: 0;
+}
+.log-cancel{
+    float: right;
+    font-size: 4em;
+    border: none;
+    padding-right:1em;
+    background: none;
+    color: white;
+}
+.desarrollo{
+    text-align: center;
+    padding: 1%;
+    background:#f1f6fa
+
+}
+.foto{
+    width: 12em;
+    height: 10em;
+}
+@media(max-width:720px){
+    .producto{
+        width: 100%;
+    }
+    .ver .info{
+        width: 100%;
+        float: left;}
+    .ver .imagen{
+        width:100%;
+        float: left;
+    }
+
+}@media(max-width:1024px) and (min-width:720px){
+    .producto{
+        width: 50%;
+    }
+}
